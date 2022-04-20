@@ -41,11 +41,11 @@ const allConfigs: Record<SupportedChains, ContractsConfig> = {
     minterType: MinterType.FixedPriceSequentialMinter,
   },
   [ChainId.Rinkeby]: {
-    deployerAddress: '0xA74d716054120f75c86dC3E2de1E879926657C1f',
-    tokenAddress: '0xCc1c746d03c576a6adBecA5539ef4fd55407206F',
-    minterAddress: '0xd71451F4f1c040d74c506f61ED011814A081e7Fe',
-    governorAddress: '0xc5FD13678d71EEd122c1c39d32f6d4F8A816592B',
-    timelockAddress: '0xF30C873F74f63e217001afe7bF4731C2E9709049',
+    deployerAddress: '0x0bAeC31A7520Acc661dbc729FcDFf93b6D7ba1cd',
+    tokenAddress: '0xeafE892F93e5219af354eEd5D06a625e19e51093',
+    minterAddress: '0x9Fc3Bc21aEA4e4e12590E642F1BfEfC7804701d3',
+    governorAddress: '0xd52ed49b6F931F3cD9Ac7845Ec37c5e15Cb84C09',
+    timelockAddress: '0xdbF5309831B0C100F42576FC178e3cC6B1106245',
     minterType: MinterType.FixedPriceSequentialMinter,
   },
   [ChainId.OptimismKovan]: {
@@ -77,7 +77,7 @@ const allConfigs: Record<SupportedChains, ContractsConfig> = {
 export const secrets = {
   alchemyApiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY,
 }
-export const config = allConfigs[CHAIN_ID]
+export const config = allConfigs[ChainId.Rinkeby]
 
 // Multicall needs to be configured only for Localhost
 export const multicallOnLocalhost = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
